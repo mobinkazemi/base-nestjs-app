@@ -60,12 +60,12 @@ async function bootstrap() {
     const { minio, redis, database } = applicationConfigs;
     console.log(`✅ Environment is: ${process.env.NODE_ENV}`);
     console.log(`✅ App is running on port ${PORT}`);
-    console.log(
-      `👀 Expecting Minio on ${minio.host}:${minio.port}/${minio.bucket}`,
-    );
-    console.log(
-      `👀 Expecting Redis on ${redis.host}:${redis.port}/${redis.name}`,
-    );
+    // console.log(
+    //   `👀 Expecting Minio on ${minio.host}:${minio.port}/${minio.bucket}`,
+    // );
+    // console.log(
+    //   `👀 Expecting Redis on ${redis.host}:${redis.port}/${redis.name}`,
+    // );
     console.log(`👀 Expecting Mongo on ${database.uri.split('//')[1]}`);
   });
 }
